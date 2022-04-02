@@ -37,7 +37,7 @@
         }
         #part2 {
               margin: 1%;
-              border: 1px solid rgb(163, 5, 5);
+              border: 1px solid rgb(222, 222, 231);
               padding: 1% 1% 1% 1%;
         }
         body {
@@ -54,6 +54,20 @@ li{
 #terms{
     font-size: 9px;
     color: rgb(75, 69, 69);
+}
+#create-page{
+    font-size: 11;
+}
+#male{
+ font-size: 11px;
+}
+#female{
+    font-size: 11px;
+}
+}
+#myDate{
+    font-size: 11px;
+}
 }
     </style>
 </head>
@@ -76,11 +90,11 @@ li{
             <div id="part1" style="border: 1px solid rgb(222, 222, 231); margin: 2%; padding: 1% 10% 17% 2%; justify-content: space-between; width: 45%;">
                 <h2>connect with friends and the world around you on Facebook. </h2>
                 <br>
-                <p style="font-size: 11px;"> see photos and updates </p><p style="font-size: 9px; color: rgb(75, 69, 69);">from friends in newsfeed</p>
+                <p style="font-size: 11px;"><img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle">&nbsp;&nbsp;&nbsp;see photos and updates </p><p style="font-size: 9px; color: rgb(75, 69, 69);">from friends in newsfeed</p>
                 <br>
-                <p style="font-size: 11px;">share what's new</p><p style="font-size: 9px; color: rgb(75, 69, 69);">in your life on your timeline </p>
+                <p style="font-size: 11px;"><img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle">&nbsp;&nbsp;&nbsp;share what's new</p><p style="font-size: 9px; color: rgb(75, 69, 69);">in your life on your timeline </p>
                 <br>
-                <p style="font-size: 11px;"> find more </p><p style="font-size: 9px; color: rgb(75, 69, 69);">of what you are looking for with facebook search </p>
+                <p style="font-size: 11px;"><img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle">&nbsp;&nbsp;&nbsp;find more </p><p style="font-size: 9px; color: rgb(75, 69, 69);">of what you are looking for with facebook search </p>
              </div>
             <div id="part2" style="margin: 1%; padding: 0.7% 0.7% 0.2%;">
                <h2>
@@ -89,23 +103,27 @@ li{
                 <b>it's free and always will be.</b>
               <form>
                  <br>
-                <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                <input style="justify-content: space-between; width: 12%;" type="text" id="fname" name="fname" placeholder="First name"><input style="float: right; width: 12%;" type="text" id="lname" name="lname" placeholder="last name">
+                <br>
                 <br>
                 <input type="text" id="mobile" name="mobile" placeholder="mobile number or email"><br>
                 <br>
                 <input type="text" id="Newpassword" name="Newpassword" placeholder="New password"><br>
                 <br>
-                <input type="date" id="myDate" value="2014-02-09"><br>
+                <label for="Birthday">Birthday</label><br>
+                <input style="font-size: 11;" type="date" id="myDate" value="2014-02-09"><br>
                 <br>
-                <input type="radio" id="female" name="female" value="female">
+                <input  type="radio" id="female" name="female" value="female">
                 <label for="Female">Female</label>
                 <input type="radio" id="male" name="male" value="male">
                 <label for="Male">Male</label><br>
               </form>
                  <br>
                  <li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that you<br> have read our<a href="">Data Policy</a>,including our<a href="">Cookie Use</a>ypu may receive sms notification from facebook and can opt out at any time.</li>
+                 <br>
                  <li><input style="background-color: rgb(21, 131, 21); color: white; border: 0.2px solid rgb(51, 45, 45); margin: 0.5%; padding: 0.5%; border-radius: 2.5px;"type="submit" value="Create Account"></li>
-                 <li id="create_page"><a href="">Create a Page</a> for a celebrity, band or business.</li>
+                 <br>
+                 <li style="font-size: 10px; color: rgb(43, 36, 36); float: right;"id="create-page"><a href=""><b>Create a Page</a> for a celebrity, band or business.<b></li>
             </div>    
 </div>
 </body>
